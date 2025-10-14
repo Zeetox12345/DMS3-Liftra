@@ -99,7 +99,7 @@
   OUTPUT FILE NAME             = C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\file4.out
 
  RELEASE= 2025 R1              BUILD= 25.1      UP20241202   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file4  21:47:26  OCT 14, 2025 CP=      0.031
+ CURRENT JOBNAME=file4  22:04:54  OCT 14, 2025 CP=      0.047
 
 
  ***** END OF INPUT ENCOUNTERED *****
@@ -124,7 +124,7 @@
  |                                                                             |
  |-----------------------------------------------------------------------------|
  |                                                                             |
- |        CP Time      (sec) =          0.188       Time  =  21:47:27          |
- |        Elapsed Time (sec) =          6.000       Date  =  10/14/2025        |
+ |        CP Time      (sec) =          0.969       Time  =  22:04:55          |
+ |        Elapsed Time (sec) =          5.000       Date  =  10/14/2025        |
  |                                                                             |
  *-----------------------------------------------------------------------------*

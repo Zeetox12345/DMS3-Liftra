@@ -6,6 +6,7 @@
 import os
 import subprocess
 
+
 # Read user input
 variables = {}
 
@@ -23,9 +24,11 @@ with open("UsrInput.txt","r") as file:
 # Create geometry
 
 
+
 # Create Runfile
 with open("Runfile.txt", "w") as file:
-    file.write("\PREP7\n")
+    file.write("/PREP7\n")
+    file.write("/UNITS,MPa") # [mm,Mg,s,C] - 1e6 Mg to 1 kg   
 
 
 
