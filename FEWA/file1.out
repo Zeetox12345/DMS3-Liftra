@@ -65,9 +65,6 @@
  Ansys, Inc. License Manager 2025 R1 
  Discovery (reduced install) 2025 R1 
  Core WB Files 2025 R1   
- CFD-Post only 2025 R1   
- Fluent (includes CFD-Post) 2025 R1  
- Polyflow (includes CFD-Post) 2025 R1
  Remote Solve Manager Standalone Services 2025 R1
  Additive 2025 R1
  Autodyn 2025 R1 
@@ -94,10 +91,10 @@
   BATCH MODE REQUESTED (-b)    = LIST
   INPUT FILE COPY MODE (-c)    = COPY
   INPUT FILE NAME              = CONIN$
-  OUTPUT FILE NAME             = C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\file1.out
+  OUTPUT FILE NAME             = C:\repos\DMS3-Liftra\FEWA\file1.out
 
  RELEASE= 2025 R1              BUILD= 25.1      UP20241202   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file1  11:03:06  OCT 15, 2025 CP=      0.125
+ CURRENT JOBNAME=file1  14:17:03  OCT 15, 2025 CP=      0.062
 
 
  ***** END OF INPUT ENCOUNTERED *****
@@ -122,7 +119,7 @@
  |                                                                             |
  |-----------------------------------------------------------------------------|
  |                                                                             |
- |        CP Time      (sec) =          0.359       Time  =  11:03:06          |
- |        Elapsed Time (sec) =         11.000       Date  =  10/15/2025        |
+ |        CP Time      (sec) =          0.594       Time  =  14:17:04          |
+ |        Elapsed Time (sec) =          5.000       Date  =  10/15/2025        |
  |                                                                             |
  *-----------------------------------------------------------------------------*

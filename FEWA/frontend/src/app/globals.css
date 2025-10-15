@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+:root {
+  --background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  --foreground: #ffffff;
+  --primary: #1e40af;
+  --primary-dark: #1e3a8a;
+  --secondary: #3b82f6;
+  --accent: #60a5fa;
+  --surface: rgba(255, 255, 255, 0.95);
+  --surface-dark: rgba(0, 0, 0, 0.8);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--primary-dark), var(--accent));
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* FEA Grid Pattern Background */
+.fea-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Animated gradient background */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Professional button styles */
+.btn-fea {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 15px 0 rgba(79, 70, 229, 0.3);
+}
+
+.btn-fea:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px 0 rgba(79, 70, 229, 0.4);
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent) 100%);
+}
+
+.btn-fea:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px 0 rgba(79, 70, 229, 0.3);
+}
+
+/* Loading animation */
+.loading-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+/* Input field styling */
+.input-fea {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #1f2937; /* Dark text for better visibility */
+  transition: all 0.3s ease;
+}
+
+.input-fea:focus {
+  background: rgba(255, 255, 255, 1);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  color: #1f2937; /* Ensure text stays dark when focused */
+}
+
+.input-fea::placeholder {
+  color: #6b7280; /* Gray placeholder text */
+}
+
+/* Card styling for parameters */
+.param-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.param-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}

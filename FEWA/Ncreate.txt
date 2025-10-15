@@ -1,5 +1,5 @@
 NODE CREATION 
-N,1,1,1,1 
-N,2,2,2,2 
+N,1,0,0,0 
+N,2,WeldLength,WeldWith,0 
 N,3,3,3,3 
 FINISH NODE CREATION 
