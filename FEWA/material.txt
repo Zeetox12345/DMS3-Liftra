@@ -1,0 +1,51 @@
+! ========================================
+! S690 Material Definition from S690fulll.xml
+! ========================================
+! Define Material ID 1 for S690
+MP,MAT,1
+
+! ========================================
+! LINEAR MATERIAL PROPERTIES
+! ========================================
+! Density: 7850 kg/m³
+MP,DENS,1,7850
+
+! Reference Temperature for thermal expansion: 22°C
+MP,REFT,1,22
+
+! ========================================
+! TEMPERATURE-DEPENDENT ELASTIC PROPERTIES
+! ========================================
+! Young's Modulus (GPa) vs Temperature (°C)
+MPTEMP,1,20,100,200,300,400,500,600,700,800,900,1000,1100,1200,1800,5000
+MPDATA,EX,1,1,200e9,200e9,180e9,160e9,140e9,120e9,62e9,26e9,18e9,13.5e9,9e9,4.5e9,3e9,3e9,3e9
+
+! Poisson's Ratio vs Temperature (°C)
+MPTEMP,1,20,100,200,300,400,500,600,700,800,900,1000,1100,1200,1800,5000
+MPDATA,PRXY,1,1,0.3,0.31,0.31,0.32,0.33,0.34,0.35,0.36,0.37,0.39,0.4,0.41,0.42,0.46,0.46
+
+! ========================================
+! THERMAL PROPERTIES (Temperature-dependent)
+! ========================================
+! Coefficient of Thermal Expansion (1/°C) vs Temperature (°C)
+MPTEMP,1,0,100,200,300,400,600,800,1200,1300,1500
+MPDATA,CTEX,1,1,1.2e-5,1.22e-5,1.24e-5,1.26e-5,1.28e-5,1.32e-5,1.36e-5,1.44e-5,1.46e-5,1.5e-5
+
+! Thermal Conductivity (W/m°C) vs Temperature (°C)
+MPTEMP,1,0,800,1459,1500,2500,5000
+MPDATA,KXX,1,1,53.334,27.3,27.3,259.3,259.3,259.3
+
+! Specific Heat (J/kg°C) vs Temperature (°C)
+MPTEMP,1,31.81,599.92,723.87,803.23,1394.04,1488.06,1506.69,5000
+MPDATA,C,1,1,494.22,1042.38,2558.42,961.87,1215.78,5371.89,987.12,987.12
+
+! ========================================
+! PLASTIC PROPERTIES - Bilinear Kinematic Hardening
+! ========================================
+! Yield Strength (Pa) vs Temperature (°C)
+MPTEMP,1,20,100,200,300,400,500,600,700,800,900,1000,1100,1200,5000
+MPDATA,YIELD,1,1,690e6,690e6,690e6,690e6,690e6,538.2e6,324.3e6,158.7e6,75.9e6,41.4e6,27.6e6,13.8e6,5e6,5e6
+
+! Tangent Modulus (Pa) vs Temperature (°C)
+MPTEMP,1,20,100,200,300,400,500,600,700,800,900,1000,1100,1200,5000
+MPDATA,TANG,1,1,585e6,585e6,472.095e6,358.605e6,245.7e6,210.6e6,105.3e6,43.875e6,29.25e6,21.9375e6,14.625e6,7.3125e6,0.1e6,0.1e6

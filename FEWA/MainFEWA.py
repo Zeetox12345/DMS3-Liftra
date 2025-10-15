@@ -46,12 +46,14 @@ with open("Runfile.txt", "w") as file:
             file.write(line)
     file.write("/PNUM,KP,1\n")
     file.write("/REPLOT\n")
-
+    
+    # Material Definition
+    with open("material.txt", "r") as mat_file:
+        for line in mat_file:
+            file.write(line)
     # Meshing
     file.write("ET,1,SOLID279\n")
     file.write(f"ESIZE,{variables["Weldthick"]/2} \n") # 5 mm
-
-
 
     # SaveFile
     file.write("SAVE, SaveFile.db\n")
