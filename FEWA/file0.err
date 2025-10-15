@@ -35,3 +35,49 @@
 /COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       09:19:42
 /COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       09:20:06
 /COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       11:02:57
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       11:18:24
+
+ *** ERROR ***                           CP =       0.328   TIME= 11:18:27
+ Invalid parameter name: {WELDLENGTH}.  If not intended to be a          
+ parameter, please refrain from using the character % when naming.       
+
+ *** ERROR ***                           CP =       0.328   TIME= 11:18:27
+ The above error occurred processing Line = N,2,{WeldLength},WeldWith,0. 
+
+ *** WARNING ***                         CP =       0.328   TIME= 11:18:27
+ Undefined parameter used in field 3 ({WELDLENGTH})                      
+  Line= N,2,{WeldLength},WeldWith,0.                                     
+
+ *** WARNING ***                         CP =       0.328   TIME= 11:18:27
+ Undefined parameter used for coordinate 1.                              
+  A value of 0.0 will be used.                                           
+
+ *** WARNING ***                         CP =       0.328   TIME= 11:18:27
+ Undefined parameter used for coordinate 2.                              
+  A value of 0.0 will be used.                                           
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       11:19:38
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       11:26:08
+
+ *** WARNING ***                         CP =       0.375   TIME= 11:26:10
+ REINFORC is not a recognized PREP7 command, abbreviation, or macro.     
+  This command will be ignored.                                          
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       11:27:29
+
+ *** WARNING ***                         CP =       0.297   TIME= 11:27:31
+ REINFORC is not a recognized PREP7 command, abbreviation, or macro.     
+  This command will be ignored.                                          
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       11:27:42
+
+ *** WARNING ***                         CP =       0.344   TIME= 11:27:44
+ REINFORC is not a recognized PREP7 command, abbreviation, or macro.     
+  This command will be ignored.                                          
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       11:37:02
+
+ *** WARNING ***                         CP =       0.438   TIME= 11:37:04
+ REINFORC is not a recognized PREP7 command, abbreviation, or macro.     
+  This command will be ignored.                                          
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       11:37:16
+
+ *** WARNING ***                         CP =       0.297   TIME= 11:37:18
+ REINFORC is not a recognized PREP7 command, abbreviation, or macro.     
+  This command will be ignored.                                          

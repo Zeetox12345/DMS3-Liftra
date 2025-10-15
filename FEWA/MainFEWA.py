@@ -44,14 +44,21 @@ with open("Runfile.txt", "w") as file:
         for line in geo_file:
             file.write(line)
 
-    file.write("SAVE, SSSaveFile.db\n")
+    # Meshing
+    file.write("ET,1,SOLID279\n")
+    file.write(f"ESIZE,{variables["Weldthick"]/2} \n") # 5 mm
+    
+
+
+    # SaveFile
+    file.write("SAVE, SaveFile.db\n")
 
 # Run ANSYS APDL in batch mode
 ansys_path = r"C:\Program Files\ANSYS Inc\v251\ansys\bin\winx64\ANSYS251.exe"
 input_file = "Runfile.txt"
 output_file = "output.txt"
 
-
+"""
 subprocess.run([
     ansys_path,
     "-b",
@@ -60,3 +67,4 @@ subprocess.run([
     "-np", "4"
 ])
 
+"""
