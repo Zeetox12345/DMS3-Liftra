@@ -38,16 +38,19 @@ subprocess.run([
 with open("Runfile.txt", "w") as file:
     file.write("/PREP7\n")
     file.write("/UNITS,MPa\n") # [mm,Mg,s,C] - 1e6 Mg to 1 kg  
+    
 
     # Insert geometry (Ncreate.txt content)
     with open("Ncreate.txt", "r") as geo_file:
         for line in geo_file:
             file.write(line)
+    file.write("/PNUM,KP,1\n")
+    file.write("/REPLOT\n")
 
     # Meshing
     file.write("ET,1,SOLID279\n")
     file.write(f"ESIZE,{variables["Weldthick"]/2} \n") # 5 mm
-    
+
 
 
     # SaveFile
