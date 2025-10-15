@@ -61,7 +61,7 @@ ansys_path = r"C:\Program Files\ANSYS Inc\v251\ansys\bin\winx64\ANSYS251.exe"
 input_file = "Runfile.txt"
 output_file = "output.txt"
 
-"""
+
 subprocess.run([
     ansys_path,
     "-b",
@@ -69,5 +69,3 @@ subprocess.run([
     "-o", output_file,
     "-np", "4"
 ])
-
-"""
