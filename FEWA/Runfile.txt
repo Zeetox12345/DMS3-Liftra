@@ -1,2 +1,4 @@
 /PREP7
 /UNITS,MPa
+N,1,1,1,1
+SAVE, SaveFile.db

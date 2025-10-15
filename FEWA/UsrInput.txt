@@ -1,0 +1,5 @@
+# User Input [in mm]
+Weldlength = 100
+Weldwidth = 50
+Weldthick = 4
+Weldthroad = 4

@@ -28,13 +28,19 @@ with open("UsrInput.txt","r") as file:
 # Create Runfile
 with open("Runfile.txt", "w") as file:
     file.write("/PREP7\n")
-    file.write("/UNITS,MPa") # [mm,Mg,s,C] - 1e6 Mg to 1 kg   
-
-
+    file.write("/UNITS,MPa\n") # [mm,Mg,s,C] - 1e6 Mg to 1 kg   
+    file.write("N,1,1,1,1\n") # [mm,Mg,s,C] - 1e6 Mg to 1 kg   
+    file.write("SAVE, SaveFile.db\n")
 
 # Run ANSYS APDL in batch mode
 ansys_path = r"C:\Program Files\ANSYS Inc\v251\ansys\bin\winx64\ANSYS251.exe"
 input_file = "Runfile.txt"
 output_file = "output.txt"
 
-subprocess.run([ansys_path, "-b", "-i", input_file, "-o", output_file, "-np", "6"])
+subprocess.run([
+    ansys_path,
+    "-b",
+    "-i", input_file,
+    "-o", output_file,
+    "-np", "6"
+])
