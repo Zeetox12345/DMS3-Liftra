@@ -44,7 +44,7 @@ with open("Runfile.txt", "w") as file:
         for line in geo_file:
             file.write(line)
 
-    file.write("SAVE, SaveFile.db\n")
+    file.write("SAVE, SSSaveFile.db\n")
 
 # Run ANSYS APDL in batch mode
 ansys_path = r"C:\Program Files\ANSYS Inc\v251\ansys\bin\winx64\ANSYS251.exe"
