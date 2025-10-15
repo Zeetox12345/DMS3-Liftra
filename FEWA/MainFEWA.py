@@ -46,11 +46,14 @@ with open("Runfile.txt", "w") as file:
             file.write(line)
     file.write("/PNUM,KP,1\n")
     file.write("/REPLOT\n")
-
+    does = (variables["Weldthick"]/2)
     # Meshing
-    file.write("ET,1,SOLID279\n")
-    file.write(f"ESIZE,{variables["Weldthick"]/2} \n") # 5 mm
 
+    file.write("ET,1,SOLID279\n")
+    file.write(f"ESIZE,{variables['Weldthick']/2} \n")  # 2 mm
+    file.write("VMESH,1 \n")
+    file.write(f"ESIZE,{variables['Weldthick']/2} \n")  # 1 mm
+    file.write("VMESH,2 \n")
 
 
     # SaveFile
@@ -61,7 +64,7 @@ ansys_path = r"C:\Program Files\ANSYS Inc\v251\ansys\bin\winx64\ANSYS251.exe"
 input_file = "Runfile.txt"
 output_file = "output.txt"
 
-
+"""
 subprocess.run([
     ansys_path,
     "-b",
@@ -69,3 +72,4 @@ subprocess.run([
     "-o", output_file,
     "-np", "4"
 ])
+"""

@@ -97,12 +97,12 @@
   OUTPUT FILE NAME             = C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\output.txt
 
  RELEASE= 2025 R1              BUILD= 25.1      UP20241202   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file0  11:37:18  OCT 15, 2025 CP=      0.094
+ CURRENT JOBNAME=file0  14:54:16  OCT 15, 2025 CP=      0.094
 
      1  /PREP7  
      2  /UNITS,MPa  
-     3      KEYPOINT CREATION   
-     4  Reinforcement Plate 
+     3  !    KEYPOINT CREATION  
+     4  !Reinforcement Plate
      5  K,1,0,0,0   
      6  K,2,100.0,0,0   
      7  K,3,100.0,50.0,0
@@ -111,8 +111,57 @@
     10  K,6,100.0,0,4.0 
     11  K,7,100.0,50.0,4.0  
     12  K,8,0,50.0,4.0  
-    13      FINISH KEYPOINT CREATION
-    14  SAVE, SaveFile.db   
+    13      
+    14  !WeldToe 1  
+    15  K,9,0,-0.5,4.0  
+    16  K,10,0,-0.5,6.82842712474619
+    17  K,11,0,2.32842712474619,4.0 
+    18  K,12,0,0.9142135623730949,5.414213562373095 
+    19  K,13,100.0,-0.5,4.0 
+    20  K,14,100.0,-0.5,6.82842712474619
+    21  K,15,100.0,2.32842712474619,4.0 
+    22  K,16,100.0,0.9142135623730949,5.414213562373095 
+    23  !    FINISH KEYPOINT CREATION   
+    24  !   LINE CREATION   
+    25   !Reinforcement Plate   
+    26  L,1,2   
+    27  L,2,3   
+    28  L,3,4   
+    29  L,4,1   
+    30  L,5,6   
+    31  L,6,7   
+    32  L,7,8   
+    33  L,8,5   
+    34  L,1,5   
+    35  L,2,6   
+    36  L,3,7   
+    37  L,4,8   
+    38  !Weld Toe 1 
+    39  L,9,11  
+    40  L,9,10  
+    41  L,10,12 
+    42  L,12,11 
+    43  L,13,15 
+    44  L,13,14 
+    45  L,14,16 
+    46  L,16,15 
+    47  L,9,13  
+    48  L,10,14 
+    49  L,11,15 
+    50  L,12,16 
+    51  !    FINISH LINE CREATION   
+    52  v,1,2,3,4,5,6,7,8   
+    53  v,9,10,11,13,14,15  
+    54  NUMCMP,VOLU 
+    55  VGLUE,ALL   
+    56  /PNUM,KP,1  
+    57  /REPLOT 
+    58  ET,1,SOLID279   
+    59  ESIZE,2.0   
+    60  VMESH,1 
+    61  ESIZE,1.0   
+    62  VMESH,2 
+    63  SAVE, SaveFile.db   
 
  RUN SETUP PROCEDURE FROM FILE= C:\Program Files\ANSYS Inc\v251\ANSYS\apdl\start.ans
 
@@ -120,7 +169,7 @@
 
  *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R1          25.1     ***
  Ansys Mechanical Enterprise Academic Research     
- 00254321  VERSION=WINDOWS x64   11:37:18  OCT 15, 2025 CP=      0.297
+ 00254321  VERSION=WINDOWS x64   14:54:16  OCT 15, 2025 CP=      0.328
 
                                                                                
 
@@ -139,10 +188,6 @@
 
  INPUT  UNITS ARE ALSO SET TO MPA 
 
- *** WARNING ***                         CP =       0.297   TIME= 11:37:18
- REINFORC is not a recognized PREP7 command, abbreviation, or macro.     
-  This command will be ignored.                                          
-
  KEYPOINT        1                  X,Y,Z=   0.00000       0.00000       0.00000      IN CSYS=        0
 
  KEYPOINT        2                  X,Y,Z=   100.000       0.00000       0.00000      IN CSYS=        0
@@ -159,30 +204,168 @@
 
  KEYPOINT        8                  X,Y,Z=   0.00000       50.0000       4.00000      IN CSYS=        0
 
+ KEYPOINT        9                  X,Y,Z=   0.00000     -0.500000       4.00000      IN CSYS=        0
 
- ***** ROUTINE COMPLETED *****  CP =         0.297
+ KEYPOINT       10                  X,Y,Z=   0.00000     -0.500000       6.82843      IN CSYS=        0
+
+ KEYPOINT       11                  X,Y,Z=   0.00000       2.32843       4.00000      IN CSYS=        0
+
+ KEYPOINT       12                  X,Y,Z=   0.00000      0.914214       5.41421      IN CSYS=        0
+
+ KEYPOINT       13                  X,Y,Z=   100.000     -0.500000       4.00000      IN CSYS=        0
+
+ KEYPOINT       14                  X,Y,Z=   100.000     -0.500000       6.82843      IN CSYS=        0
+
+ KEYPOINT       15                  X,Y,Z=   100.000       2.32843       4.00000      IN CSYS=        0
+
+ KEYPOINT       16                  X,Y,Z=   100.000      0.914214       5.41421      IN CSYS=        0
+
+ LINE CONNECTS KEYPOINTS      1     2
+  LINE NO.=     1  KP1=      1  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=      2  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      2     3
+  LINE NO.=     2  KP1=      2  TAN1=    0.0000  -1.0000   0.0000
+                   KP2=      3  TAN2=    0.0000   1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      3     4
+  LINE NO.=     3  KP1=      3  TAN1=    1.0000   0.0000   0.0000
+                   KP2=      4  TAN2=   -1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      4     1
+  LINE NO.=     4  KP1=      4  TAN1=    0.0000   1.0000   0.0000
+                   KP2=      1  TAN2=    0.0000  -1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      5     6
+  LINE NO.=     5  KP1=      5  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=      6  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      6     7
+  LINE NO.=     6  KP1=      6  TAN1=    0.0000  -1.0000   0.0000
+                   KP2=      7  TAN2=    0.0000   1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      7     8
+  LINE NO.=     7  KP1=      7  TAN1=    1.0000   0.0000   0.0000
+                   KP2=      8  TAN2=   -1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      8     5
+  LINE NO.=     8  KP1=      8  TAN1=    0.0000   1.0000   0.0000
+                   KP2=      5  TAN2=    0.0000  -1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      1     5
+  LINE NO.=     9  KP1=      1  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=      5  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS      2     6
+  LINE NO.=    10  KP1=      2  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=      6  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS      3     7
+  LINE NO.=    11  KP1=      3  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=      7  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS      4     8
+  LINE NO.=    12  KP1=      4  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=      8  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS      9    11
+  LINE NO.=    13  KP1=      9  TAN1=    0.0000  -1.0000   0.0000
+                   KP2=     11  TAN2=    0.0000   1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      9    10
+  LINE NO.=    14  KP1=      9  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=     10  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS     10    12
+  LINE NO.=    15  KP1=     10  TAN1=    0.0000  -0.7071   0.7071
+                   KP2=     12  TAN2=    0.0000   0.7071  -0.7071
+
+ LINE CONNECTS KEYPOINTS     12    11
+  LINE NO.=    16  KP1=     12  TAN1=    0.0000  -0.7071   0.7071
+                   KP2=     11  TAN2=    0.0000   0.7071  -0.7071
+
+ LINE CONNECTS KEYPOINTS     13    15
+  LINE NO.=    17  KP1=     13  TAN1=    0.0000  -1.0000   0.0000
+                   KP2=     15  TAN2=    0.0000   1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS     13    14
+  LINE NO.=    18  KP1=     13  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=     14  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS     14    16
+  LINE NO.=    19  KP1=     14  TAN1=    0.0000  -0.7071   0.7071
+                   KP2=     16  TAN2=    0.0000   0.7071  -0.7071
+
+ LINE CONNECTS KEYPOINTS     16    15
+  LINE NO.=    20  KP1=     16  TAN1=    0.0000  -0.7071   0.7071
+                   KP2=     15  TAN2=    0.0000   0.7071  -0.7071
+
+ LINE CONNECTS KEYPOINTS      9    13
+  LINE NO.=    21  KP1=      9  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=     13  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS     10    14
+  LINE NO.=    22  KP1=     10  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=     14  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS     11    15
+  LINE NO.=    23  KP1=     11  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=     15  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS     12    16
+  LINE NO.=    24  KP1=     12  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=     16  TAN2=    1.0000   0.0000   0.0000
+
+ VOLUME CONNECTING KEYPOINTS     1     2     3     4     5     6     7     8
+    (GENERATED LINES AND AREAS FITTED IN ACTIVE CSYS =  0)
+
+     VOLUME NUMBER =      1
+
+ VOLUME CONNECTING KEYPOINTS     9    10    11    11    13    14    15    15
+    (GENERATED LINES AND AREAS FITTED IN ACTIVE CSYS =  0)
+
+     VOLUME NUMBER =      2
+
+ COMPRESS VOLUME NUMBERS
+      MAXIMUM VOLUME NUMBER COMPRESSED FROM      2 TO      2
+
+ GLUE VOLUMES
+      INPUT VOLUMES =     1    2
+      INPUT VOLUMES WILL BE DELETED IF POSSIBLE
+      OUTPUT VOLUMES =     3    4
+
+ KP   NUMBERING KEY =  1
+
+ *** NOTE *** Display device has not yet been specified with the /SHOW command.  Display commands ignored. 
+
+ ELEMENT TYPE          1 IS SOLID279     3-D 20-NODE THERMAL SOLID   
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ CURRENT NODAL DOF SET IS  TEMP
+  THREE-DIMENSIONAL MODEL
+
+ DEFAULT ELEMENT DIVISIONS PER LINE BASED ON ELEMENT SIZE =   2.00    
+
+ GENERATE NODES AND ELEMENTS
+       IN VOLUMES       1  TO      1  IN STEPS OF      1
+
+ *** ERROR ***                           CP =       0.328   TIME= 14:54:16
+ There are no selected volumes in the set named on the VMESH command.    
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          0
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          1
 
 
 
- ALL CURRENT MAPDL DATA WRITTEN TO FILE NAME= SaveFile.db
-  FOR POSSIBLE RESUME FROM THIS POINT
-
- ***** END OF INPUT ENCOUNTERED *****
-
- PURGE ALL SOLUTION AND POST DATA
- SAVE ALL MODEL DATA
-
- ALL CURRENT MAPDL DATA WRITTEN TO FILE NAME= file.db
-  FOR POSSIBLE RESUME FROM THIS POINT
-
-
- NUMBER OF WARNING MESSAGES ENCOUNTERED=          1
- NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+ ***** PROBLEM TERMINATED BY INDICATED ERROR(S) OR BY END OF INPUT DATA *****
 
 +--------------------- M A P D L   S T A T I S T I C S ------------------------+
 
 Release: 2025 R1            Build: 25.1       Update: UP20241202   Platform: WINDOWS x64 
-Date Run: 10/15/2025   Time: 11:37     Process ID: 31740
+Date Run: 10/15/2025   Time: 14:54     Process ID: 44288
 Operating System: Windows 11  (Build: 26100)
 
 Processor Model: AMD Ryzen 7 5800H with Radeon Graphics
@@ -213,18 +396,18 @@ Input File: Runfile.txt
      2                   AT-Laptop   C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA
      3                   AT-Laptop   C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA
  
-Latency time from master to core     1 =    3.506 microseconds
-Latency time from master to core     2 =    3.452 microseconds
-Latency time from master to core     3 =    3.437 microseconds
+Latency time from master to core     1 =    3.599 microseconds
+Latency time from master to core     2 =    3.496 microseconds
+Latency time from master to core     3 =    3.773 microseconds
  
-Communication speed from master to core     1 =  5771.09 MB/sec
-Communication speed from master to core     2 =  7452.05 MB/sec
-Communication speed from master to core     3 =  6280.32 MB/sec
+Communication speed from master to core     1 =  6644.52 MB/sec
+Communication speed from master to core     2 = 11459.68 MB/sec
+Communication speed from master to core     3 =  6057.16 MB/sec
 
-Total CPU time for main thread                    :        0.4 seconds
+Total CPU time for main thread                    :        0.5 seconds
 Total CPU time summed for all threads             :        0.9 seconds
 
-Elapsed time spent obtaining a license            :        1.8 seconds
+Elapsed time spent obtaining a license            :        1.7 seconds
 Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
 Elapsed time spent solution - preprocessing       :        0.0 seconds
 Elapsed time spent computing solution             :        0.0 seconds
@@ -234,7 +417,7 @@ Elapsed time spent post-processing model (/POST1) :        0.0 seconds
 
 Sum of disk space used on all processes           :        0.0 MB
 
-Sum of memory used on all processes               :       27.0 MB
+Sum of memory used on all processes               :       25.0 MB
 Sum of memory allocated on all processes          :     2880.0 MB
 Physical memory available                         :         14 GB
 Total amount of I/O written to disk               :        0.0 GB
@@ -254,13 +437,13 @@ Total amount of I/O read from disk                :        0.0 GB
  |-----------------------------------------------------------------------------|
  |                                                                             |
  |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
- |  Max Database Used(Master)      1 MB     Max Scratch Used(Master)      8 MB |
+ |  Max Database Used(Master)      1 MB     Max Scratch Used(Master)      6 MB |
  |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)     5 MB |
- |  Sum Database Used(All)         4 MB     Sum Scratch Used(All)        23 MB |
+ |  Sum Database Used(All)         4 MB     Sum Scratch Used(All)        21 MB |
  |                                                                             |
  |-----------------------------------------------------------------------------|
  |                                                                             |
- |        CP Time      (sec) =          0.922       Time  =  11:37:19          |
+ |        CP Time      (sec) =          0.938       Time  =  14:54:17          |
  |        Elapsed Time (sec) =          4.000       Date  =  10/15/2025        |
  |                                                                             |
  *-----------------------------------------------------------------------------*

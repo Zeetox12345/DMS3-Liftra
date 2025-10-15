@@ -73,7 +73,11 @@ with open("Ncreate.txt","w") as file:
     file.write("!    FINISH LINE CREATION \n")
     
     # Create Volumes
-    file.write("v,1,2,3,4,5,6,7,8 \n")
-    file.write("v,9,10,11,13,14,15 \n")
+    
+    file.write("v,1,2,3,4,5,6,7,8 \n") # Reinforcement Plate #1
+    file.write("v,9,10,11,13,14,15 \n") # Weld Toe 1 #2
+
+    file.write("VGLUE,ALL\n")
+    file.write("NUMCMP,VOLU\n") # Make sure Volume number starts from 1
 
     

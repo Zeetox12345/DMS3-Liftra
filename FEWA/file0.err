@@ -81,3 +81,39 @@
  *** WARNING ***                         CP =       0.297   TIME= 11:37:18
  REINFORC is not a recognized PREP7 command, abbreviation, or macro.     
   This command will be ignored.                                          
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       14:50:43
+
+ *** ERROR ***                           CP =       0.469   TIME= 14:50:49
+ Attempt to divide by zero in parameter expression.                      
+
+ *** ERROR ***                           CP =       0.469   TIME= 14:50:49
+ The above error occurred processing field= ALL/PNUM                     
+  Line= VGLUE,ALL/PNUM,KP,1.                                             
+
+ *** WARNING ***                         CP =       0.469   TIME= 14:50:49
+ Undefined parameter used in field 2 (ALL/PNUM)                          
+  Line= VGLUE,ALL/PNUM,KP,1.                                             
+
+ *** ERROR ***                           CP =       0.469   TIME= 14:50:49
+ Need at least 2 volumes for VGLU command.                               
+  Please input volumes.                                                  
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       14:51:11
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       14:53:51
+
+ *** ERROR ***                           CP =       0.375   TIME= 14:53:53
+ Missing separator between two fields.                                   
+
+ *** ERROR ***                           CP =       0.375   TIME= 14:53:53
+ The above error occurred processing field= 1ESIZE                       
+  Line= VMESH,1ESIZE,1.0.                                                
+
+ *** WARNING ***                         CP =       0.375   TIME= 14:53:53
+ Undefined parameter used in field 2 (1ESIZE)                            
+  Line= VMESH,1ESIZE,1.0.                                                
+
+ *** ERROR ***                           CP =       0.375   TIME= 14:53:53
+ Starting number on the VMESH command must be positive.                  
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       14:54:14
+
+ *** ERROR ***                           CP =       0.328   TIME= 14:54:16
+ There are no selected volumes in the set named on the VMESH command.    
