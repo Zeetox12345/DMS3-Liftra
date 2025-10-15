@@ -24,6 +24,7 @@ with open("Ncreate.txt","w") as file:
     file.write(f"K,7,{Weldlength},{Weldwidth},{Weldthick} \n")
     file.write(f"K,8,0,{Weldwidth},{Weldthick} \n \n")
 
+
     file.write("!WeldToe 1 \n")
     file.write(f"K,9,0,-0.5,{Weldthick} \n")
     file.write(f"K,10,0,-0.5,{Weldthick + Wkat} \n")
@@ -71,7 +72,8 @@ with open("Ncreate.txt","w") as file:
 
     file.write("!    FINISH LINE CREATION \n")
     
-
+    # Create Volumes
     file.write("v,1,2,3,4,5,6,7,8 \n")
+    file.write("v,9,10,11,13,14,15 \n")
 
     
