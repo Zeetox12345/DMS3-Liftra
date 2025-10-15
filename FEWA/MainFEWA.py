@@ -24,12 +24,27 @@ with open("UsrInput.txt","r") as file:
 # Create geometry
 
 
+# Must run GeoCreate here
+subprocess.run([
+    "python", "GeoCreate.py",
+    str(variables["Weldlength"]),
+    str(variables["Weldwidth"]),
+    str(variables["Weldthick"]),
+    str(variables["Weldthroad"])
+], check=True)
+
 
 # Create Runfile
 with open("Runfile.txt", "w") as file:
     file.write("/PREP7\n")
     file.write("/UNITS,MPa\n") # [mm,Mg,s,C] - 1e6 Mg to 1 kg   
     file.write("N,1,1,1,1\n") # [mm,Mg,s,C] - 1e6 Mg to 1 kg   
+
+    # Insert geometry (Ncreate.txt content)
+    with open("Ncreate.txt", "r") as geo_file:
+        for line in geo_file:
+            file.write(line)
+
     file.write("SAVE, SaveFile.db\n")
 
 # Run ANSYS APDL in batch mode
@@ -37,6 +52,7 @@ ansys_path = r"C:\Program Files\ANSYS Inc\v251\ansys\bin\winx64\ANSYS251.exe"
 input_file = "Runfile.txt"
 output_file = "output.txt"
 
+"""
 subprocess.run([
     ansys_path,
     "-b",
@@ -44,3 +60,4 @@ subprocess.run([
     "-o", output_file,
     "-np", "6"
 ])
+"""
