@@ -30,15 +30,14 @@ subprocess.run([
     str(variables["Weldlength"]),
     str(variables["Weldwidth"]),
     str(variables["Weldthick"]),
-    str(variables["Weldthroad"])
+    str(variables["Weldthroat"])
 ], check=True)
 
 
 # Create Runfile
 with open("Runfile.txt", "w") as file:
     file.write("/PREP7\n")
-    file.write("/UNITS,MPa\n") # [mm,Mg,s,C] - 1e6 Mg to 1 kg   
-    file.write("N,1,1,1,1\n") # [mm,Mg,s,C] - 1e6 Mg to 1 kg   
+    file.write("/UNITS,MPa\n") # [mm,Mg,s,C] - 1e6 Mg to 1 kg  
 
     # Insert geometry (Ncreate.txt content)
     with open("Ncreate.txt", "r") as geo_file:
@@ -52,12 +51,12 @@ ansys_path = r"C:\Program Files\ANSYS Inc\v251\ansys\bin\winx64\ANSYS251.exe"
 input_file = "Runfile.txt"
 output_file = "output.txt"
 
-"""
+
 subprocess.run([
     ansys_path,
     "-b",
     "-i", input_file,
     "-o", output_file,
-    "-np", "6"
+    "-np", "4"
 ])
-"""
+
