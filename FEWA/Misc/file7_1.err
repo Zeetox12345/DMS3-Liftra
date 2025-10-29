@@ -1,0 +1,10 @@
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       08:50:30
+
+ *** FATAL ***                           CP =       2.531   TIME= 09:06:38
+ Check processor 0 (master) for error message(s).                        
+
+ ************************************************************************
+ The above error is non-recoverable by ANSYS                             
+  ANSYS run terminated by the indicated error                            
+  Current data base saved if possible.                                   
+ ************************************************************************

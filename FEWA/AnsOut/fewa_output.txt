@@ -1,0 +1,734 @@
+
+ Ansys Mechanical Enterprise Academic Research     
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *         ANSYS MAPDL 2025 R1          LEGAL NOTICES          *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2025 Ansys, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of Ansys, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the Ansys, Inc. online documentation or the Ansys, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * Ansys, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * Ansys, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the Ansys, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the Ansys, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2025 R1 
+     
+ Point Releases and Patches installed:   
+     
+ Ansys, Inc. License Manager 2025 R1 
+ Discovery (reduced install) 2025 R1 
+ Core WB Files 2025 R1   
+ CFD-Post only 2025 R1   
+ Fluent (includes CFD-Post) 2025 R1  
+ Polyflow (includes CFD-Post) 2025 R1
+ Remote Solve Manager Standalone Services 2025 R1
+ Additive 2025 R1
+ Autodyn 2025 R1 
+ Customization Files for User Programmable Features 2025 R1  
+ LS-DYNA 2025 R1 
+ Material Designer 2025 R1   
+ Mechanical Products 2025 R1 
+ ACIS Geometry Interface 2025 R1 
+ AutoCAD Geometry Interface 2025 R1  
+ Catia, Version 4 Geometry Interface 2025 R1 
+ Catia, Version 5 Geometry Interface 2025 R1 
+ Catia, Version 6 Geometry Interface 2025 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2025 R1
+ Creo Parametric Geometry Interface 2025 R1  
+ Inventor Geometry Interface 2025 R1 
+ JTOpen Geometry Interface 2025 R1   
+ NX Geometry Interface 2025 R1   
+ Parasolid Geometry Interface  2025 R1   
+ Solid Edge Geometry Interface 2025 R1   
+ SOLIDWORKS Geometry Interface 2025 R1   
+
+
+          *****  MAPDL COMMAND LINE ARGUMENTS  *****
+  INITIAL JOBNAME              = FEWA                                                                                                                                                                                                                                                    
+  BATCH MODE REQUESTED (-b)    = LIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  INPUT FILE NAME              = C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\Runfile.txt
+  OUTPUT FILE NAME             = C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\Ansout\FEWA_output.txt
+  INITIAL DIRECTORY = C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\Ansout
+
+ RELEASE= 2025 R1              BUILD= 25.1      UP20241202   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=FEWA0  10:44:50  OCT 29, 2025 CP=      0.141
+
+     1  !---------- APDL EXCECUTABLE ---------- 
+     2      
+     3  !INITIALIZING   
+     4   /PREP7 
+     5  /UNITS,MPa  
+     6      
+     7  !----- MATERIAL PROPERTIES -----
+     8      
+     9   MP, DENS, 1, 7.85E-9      ! Density [Mg/mm^3]  
+    10  !TD Thermal Conductivity [W/mmC]
+    11  MPTEMP,1,0,800,1459,1500,2500   
+    12  MPDATA,KXX,1,1,0.053334,0.0273,0.0273,0.2593,0.2593 
+    13  MPTEMP, 
+    14      
+    15  !TD Heat Capacity [Nmm/MgC] 
+    16  MPTEMP,MPTEMP,1,31.81, 599.92, 723.87, 803.23, 1394.04, 1488.06, 1506.69
+    17  MPTEMP, , 1506.69   
+    18  MPDATA,C,1,1,494.22,1042.38,2558.42,961.87,1215.78,5371.89,987.12   
+    19  MPDATA, C, 1, 7, 987.12 
+    20  MPTEMP, 
+    21  ! Youngs Modulus [GPA]  
+    22  MPTEMP,1,20,100,200,300,400,500 
+    23  MPTEMP, ,600,700,800,900,1000,1100  
+    24  MPTEMP, ,1200,1500  
+    25  MPDATA,EX,1,1,200000,200000,180000,160000,140000,120000 
+    26  MPDATA,EX,1,7,62000,26000,18000,13500,9000,4500 
+    27  MPDATA,EX,1,13,3000,3000
+    28  MPTEMP, 
+    29  ! Temperature-Dependent Coefficient of Thermal Expansion
+    30  MPTEMP,1,0,100,200,300,400,600  
+    31  MPTEMP, ,800,1200,1500  
+    32  MPDATA,ALPX,1,1,1.2e-05,1.22e-05,1.24e-05,1.26e-05,1.28e-06,1.32e-05
+    33  MPDATA,ALPX,1,7,1.36e-05,1.44e-05,1.5e-05   
+    34  MPTEMP, 
+    35  MPTEMP,1,20,100,200,300,400,500 
+    36  MPTEMP, ,600,700,800,900,1000,1100  
+    37  MPTEMP, ,1200,1500  
+    38  MPDATA,PRXY,1,1,0.3,0.31,0.31,0.32,0.33,0.34
+    39  MPDATA,PRXY,1,7,0.35,0.36,0.37,0.39,0.4,0.41
+    40  MPDATA,PRXY,1,,0.42,0.46
+    41  TB, PLAS, 1, 2,,BISO
+    42  TBTEMP,20   
+    43  TBDATA,1,690,585
+    44  TBTEMP,100  
+    45  TBDATA,1,690,585
+    46  TBTEMP,200  
+    47  TBDATA,1,621,472.095
+    48  TBTEMP,300  
+    49  TBDATA,1,552,358.605
+    50  TBTEMP,400  
+    51  TBDATA,1,483,245.7  
+    52  TBTEMP,500  
+    53  TBDATA,1,414,210.6  
+    54  TBTEMP,600  
+    55  TBDATA,1,213.9,105.3
+    56  TBTEMP,700  
+    57  TBDATA,1,89.7,43.875
+    58  TBTEMP,800  
+    59  TBDATA,1,62.1,29.25 
+    60  TBTEMP,900  
+    61  TBDATA,1,46.575,21.9375 
+    62  TBTEMP,1000 
+    63  TBDATA,1,31.05,14.625   
+    64  TBTEMP,1100 
+    65  TBDATA,1,15.525,7.3125  
+    66  TBTEMP,1200 
+    67  TBDATA,1,5,0.1  
+    68  TBTEMP,1500 
+    69  TBDATA,1,5,0.1  
+    70  !----- FINISH MATERIAL PROPERTIES ----- 
+    71      
+    72  ! ----- GEOMETRY CREATION ----- 
+    73  !  KEYPOINT CREATION
+    74  !Reinforcement Plate
+    75  K,1,0,0,0   
+    76  K,2,100.0,0,0   
+    77  K,3,100.0,50.0,0
+    78  K,4,0,50.0,0
+    79  K,5,0,0,4.0 
+    80  K,6,100.0,0,4.0 
+    81  K,7,100.0,50.0,4.0  
+    82  K,8,0,50.0,4.0  
+    83      
+    84  ! WeldToe 1 
+    85  K,9,0,-0.5,4.0  
+    86  K,10,0,-0.5,6.82842712474619
+    87  K,11,0,2.32842712474619,4.0 
+    88  K,12,0,0.9142135623730949,5.414213562373095 
+    89  K,13,100.0,-0.5,4.0 
+    90  K,14,100.0,-0.5,6.82842712474619
+    91  K,15,100.0,2.32842712474619,4.0 
+    92  K,16,100.0,0.9142135623730949,5.414213562373095 
+    93  ! WeldToe 2 
+    94  !  FINISH KEYPOINT CREATION 
+    95  !  LINE CREATION
+    96   ! Reinforcement Plate  
+    97  L,1,2   
+    98  L,2,3   
+    99  L,3,4   
+   100  L,4,1   
+   101  L,5,6   
+   102  L,6,7   
+   103  L,7,8   
+   104  L,8,5   
+   105  L,1,5   
+   106  L,2,6   
+   107  L,3,7   
+   108  L,4,8   
+   109  ! Weld Toe 1
+   110  L,9,11  
+   111  L,9,10  
+   112  L,10,12 
+   113  L,12,11 
+   114  L,13,15 
+   115  L,13,14 
+   116  L,14,16 
+   117  L,16,15 
+   118  L,9,13  
+   119  L,10,14 
+   120  L,11,15 
+   121  L,12,16 
+   122  ! FINISH LINE CREATION  
+   123  ! Volume Create 
+   124   v,1,2,3,4,5,6,7,8  
+   125  v,9,10,11,13,14,15  
+   126  *GET,vRP,VOLU,0,NUM,MIN 
+   127  *GET,vWT1,VOLU,0,NUM,MAX
+   128   VGLUE,ALL ! Glue Volumes Together  
+   129  ! ----- FINISH GEOMETRY CREATION -----  
+   130      
+   131  ! ----- Apply Loads and Solve ----- 
+   132  /SOLU   
+   133  ANTYPE,TRANSIENT,NEW/PNUM,KP,1  
+   134  /REPLOT 
+   135      
+   136  !----- MESHING -----
+   137  ET,1,SOLID279 ! Element Type
+   138  !Selecting Lines
+   139  LSEL,S,LINE,, 14
+   140  LSEL,A,LINE,, 25
+   141  LSEL,A,LINE,, 29
+   142  LSEL,A,LINE,, 27
+   143  LSEL,A,LINE,, 30
+   144  LSEL,A,LINE,, 28
+   145  LSEL,A,LINE,, 18
+   146  LSEL,A,LINE,, 26
+   147  LESIZE, ALL, 1.0
+   148  LSEL,S,LINE,, 21
+   149  LSEL,A,LINE,, 5 
+   150  LSEL,A,LINE,, 22
+   151  LSEL,A,LINE,, 24
+   152  LSEL,A,LINE,, 23
+   153  LESIZE, ALL, 2.0
+   154  LSEL,S,LINE,, 4 
+   155  LSEL,A,LINE,, 32
+   156  LSEL,A,LINE,, 3 
+   157  LSEL,A,LINE,, 7 
+   158  LSEL,A,LINE,, 2 
+   159  LSEL,A,LINE,, 31
+   160  LSEL,A,LINE,, 1 
+   161  LESIZE, ALL, 2.0
+   162  LSEL,S,LINE,, 10
+   163  LSEL,A,LINE,, 11
+   164  LSEL,A,LINE,, 12
+   165  LSEL,A,LINE,, 9 
+   166  LESIZE, ALL, 2.0
+   167  LSEL,ALL
+   168  /PNUM,LINE,1
+   169  LPLOT   
+   170  !Setting Mesh Parameters
+   171   MSHKEY, 1  
+   172  VSWEEP, ALL ! Creating Mesh 
+   173  SHPP,SUMMARY
+   174  !----- MESH FINISH -----
+   175      
+   176  !SAVING FILE
+   177  SAVE, SaveFile2.db  
+
+ RUN SETUP PROCEDURE FROM FILE= C:\Program Files\ANSYS Inc\v251\ANSYS\apdl\start.ans
+
+ /INPUT FILE= C:\Program Files\ANSYS Inc\v251\ANSYS\apdl\start.ans  LINE=       0
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R1          25.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00254321  VERSION=WINDOWS x64   10:44:50  OCT 29, 2025 CP=      0.422
+
+                                                                               
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+
+ MPA UNITS SPECIFIED FOR INTERNAL    
+  LENGTH      = MILLIMETERS (mm)
+  MASS        = TONNE (Mg)
+  TIME        = SECONDS (sec)
+  TEMPERATURE = CELSIUS (C)
+  TOFFSET     = 273.0
+  FORCE       = NEWTON (N)
+  HEAT        = MILLIJOULES (mJ)
+
+ INPUT  UNITS ARE ALSO SET TO MPA 
+
+ MATERIAL          1     DENS =  0.7850000E-08  
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS=  5 ***
+ SLOC=   1     0.000000      800.0000      1459.000    
+               1500.000      2500.000    
+
+ PROPERTY TABLE KXX   MAT=      1  NUM. POINTS=  5
+ SLOC=   1    0.5333400E-01 0.2730000E-01 0.2730000E-01 0.2593000    
+              0.2593000    
+
+ TEMPERATURE TABLE ERASED.
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS=  6 ***
+ SLOC=   1     1.000000      31.81000      599.9200    
+               723.8700      803.2300      1394.040    
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS=  7 ***
+ SLOC=   7     1506.690    
+
+ PROPERTY TABLE C     MAT=      1  NUM. POINTS=  6
+ SLOC=   1     494.2200      1042.380      2558.420      961.8700    
+               1215.780      5371.890    
+
+ PROPERTY TABLE C     MAT=      1  NUM. POINTS=  7
+ SLOC=   7     987.1200    
+
+ TEMPERATURE TABLE ERASED.
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS=  6 ***
+ SLOC=   1     20.00000      100.0000      200.0000    
+               300.0000      400.0000      500.0000    
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS= 12 ***
+ SLOC=   7     600.0000      700.0000      800.0000    
+               900.0000      1000.000      1100.000    
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS= 14 ***
+ SLOC=  13     1200.000      1500.000    
+
+ PROPERTY TABLE EX    MAT=      1  NUM. POINTS=  6
+ SLOC=   1     200000.0      200000.0      180000.0      160000.0    
+               140000.0      120000.0    
+
+ PROPERTY TABLE EX    MAT=      1  NUM. POINTS= 12
+ SLOC=   7     62000.00      26000.00      18000.00      13500.00    
+               9000.000      4500.000    
+
+ PROPERTY TABLE EX    MAT=      1  NUM. POINTS= 14
+ SLOC=  13     3000.000      3000.000    
+
+ TEMPERATURE TABLE ERASED.
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS=  6 ***
+ SLOC=   1     0.000000      100.0000      200.0000    
+               300.0000      400.0000      600.0000    
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS=  9 ***
+ SLOC=   7     800.0000      1200.000      1500.000    
+
+
+ PROPERTY TABLE ALPX  MAT=      1  NUM. POINTS=  6
+ SLOC=   1    0.1200000E-04 0.1220000E-04 0.1240000E-04 0.1260000E-04
+              0.1280000E-05 0.1320000E-04
+
+ PROPERTY TABLE ALPX  MAT=      1  NUM. POINTS=  9
+ SLOC=   7    0.1360000E-04 0.1440000E-04 0.1500000E-04
+
+ TEMPERATURE TABLE ERASED.
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS=  6 ***
+ SLOC=   1     20.00000      100.0000      200.0000    
+               300.0000      400.0000      500.0000    
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS= 12 ***
+ SLOC=   7     600.0000      700.0000      800.0000    
+               900.0000      1000.000      1100.000    
+
+ *** PROPERTY TEMPERATURE TABLE    NUM. TEMPS= 14 ***
+ SLOC=  13     1200.000      1500.000    
+
+ PROPERTY TABLE PRXY  MAT=      1  NUM. POINTS=  6
+ SLOC=   1    0.3000000     0.3100000     0.3100000     0.3200000    
+              0.3300000     0.3400000    
+
+ PROPERTY TABLE PRXY  MAT=      1  NUM. POINTS= 12
+ SLOC=   7    0.3500000     0.3600000     0.3700000     0.3900000    
+              0.4000000     0.4100000    
+
+ PROPERTY TABLE PRXY  MAT=      1  NUM. POINTS= 14
+ SLOC=  13    0.4200000     0.4600000    
+
+   RATE-INDEPENDENT PLASTICITY - BILINEAR ISOTROPIC HARDENING OPTION FOR MATERIAL 1 
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  20.0000
+    TEMPERATURE SPECIFICATION=  1
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  20.0000    
+ LOC=  1 6.90000e+02     5.85000e+02    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  100.0000
+    TEMPERATURE SPECIFICATION=  2
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  100.0000    
+ LOC=  1 6.90000e+02     5.85000e+02    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  200.0000
+    TEMPERATURE SPECIFICATION=  3
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  200.0000    
+ LOC=  1 6.21000e+02     4.72095e+02    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  300.0000
+    TEMPERATURE SPECIFICATION=  4
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  300.0000    
+ LOC=  1 5.52000e+02     3.58605e+02    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  400.0000
+    TEMPERATURE SPECIFICATION=  5
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  400.0000    
+ LOC=  1 4.83000e+02     2.45700e+02    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  500.0000
+    TEMPERATURE SPECIFICATION=  6
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  500.0000    
+ LOC=  1 4.14000e+02     2.10600e+02    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  600.0000
+    TEMPERATURE SPECIFICATION=  7
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  600.0000    
+ LOC=  1 2.13900e+02     1.05300e+02    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  700.0000
+    TEMPERATURE SPECIFICATION=  8
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  700.0000    
+ LOC=  1 8.97000e+01     4.38750e+01    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  800.0000
+    TEMPERATURE SPECIFICATION=  9
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  800.0000    
+ LOC=  1 6.21000e+01     2.92500e+01    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  900.0000
+    TEMPERATURE SPECIFICATION=  10
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  900.0000    
+ LOC=  1 4.65750e+01     2.19375e+01    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  1000.0000
+    TEMPERATURE SPECIFICATION=  11
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  1000.0000    
+ LOC=  1 3.10500e+01     1.46250e+01    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  1100.0000
+    TEMPERATURE SPECIFICATION=  12
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  1100.0000    
+ LOC=  1 1.55250e+01     7.31250e+00    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  1200.0000
+    TEMPERATURE SPECIFICATION=  13
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  1200.0000    
+ LOC=  1 5.00000e+00     1.00000e-01    
+
+ TEMPERATURE TO BE USED FOR THE NEXT TBDAT COMMAND=  1500.0000
+    TEMPERATURE SPECIFICATION=  14
+
+ DATA FOR  PLAS  TABLE FOR MATERIAL   1 AT TEMPERATURE=  1500.0000    
+ LOC=  1 5.00000e+00     1.00000e-01    
+
+
+ KEYPOINT        1                  X,Y,Z=   0.00000       0.00000       0.00000      IN CSYS=        0
+
+ KEYPOINT        2                  X,Y,Z=   100.000       0.00000       0.00000      IN CSYS=        0
+
+ KEYPOINT        3                  X,Y,Z=   100.000       50.0000       0.00000      IN CSYS=        0
+
+ KEYPOINT        4                  X,Y,Z=   0.00000       50.0000       0.00000      IN CSYS=        0
+
+ KEYPOINT        5                  X,Y,Z=   0.00000       0.00000       4.00000      IN CSYS=        0
+
+ KEYPOINT        6                  X,Y,Z=   100.000       0.00000       4.00000      IN CSYS=        0
+
+ KEYPOINT        7                  X,Y,Z=   100.000       50.0000       4.00000      IN CSYS=        0
+
+ KEYPOINT        8                  X,Y,Z=   0.00000       50.0000       4.00000      IN CSYS=        0
+
+ KEYPOINT        9                  X,Y,Z=   0.00000     -0.500000       4.00000      IN CSYS=        0
+
+ KEYPOINT       10                  X,Y,Z=   0.00000     -0.500000       6.82843      IN CSYS=        0
+
+ KEYPOINT       11                  X,Y,Z=   0.00000       2.32843       4.00000      IN CSYS=        0
+
+ KEYPOINT       12                  X,Y,Z=   0.00000      0.914214       5.41421      IN CSYS=        0
+
+ KEYPOINT       13                  X,Y,Z=   100.000     -0.500000       4.00000      IN CSYS=        0
+
+ KEYPOINT       14                  X,Y,Z=   100.000     -0.500000       6.82843      IN CSYS=        0
+
+ KEYPOINT       15                  X,Y,Z=   100.000       2.32843       4.00000      IN CSYS=        0
+
+ KEYPOINT       16                  X,Y,Z=   100.000      0.914214       5.41421      IN CSYS=        0
+
+ LINE CONNECTS KEYPOINTS      1     2
+  LINE NO.=     1  KP1=      1  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=      2  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      2     3
+  LINE NO.=     2  KP1=      2  TAN1=    0.0000  -1.0000   0.0000
+                   KP2=      3  TAN2=    0.0000   1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      3     4
+  LINE NO.=     3  KP1=      3  TAN1=    1.0000   0.0000   0.0000
+                   KP2=      4  TAN2=   -1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      4     1
+  LINE NO.=     4  KP1=      4  TAN1=    0.0000   1.0000   0.0000
+                   KP2=      1  TAN2=    0.0000  -1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      5     6
+  LINE NO.=     5  KP1=      5  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=      6  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      6     7
+  LINE NO.=     6  KP1=      6  TAN1=    0.0000  -1.0000   0.0000
+                   KP2=      7  TAN2=    0.0000   1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      7     8
+  LINE NO.=     7  KP1=      7  TAN1=    1.0000   0.0000   0.0000
+                   KP2=      8  TAN2=   -1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      8     5
+  LINE NO.=     8  KP1=      8  TAN1=    0.0000   1.0000   0.0000
+                   KP2=      5  TAN2=    0.0000  -1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      1     5
+  LINE NO.=     9  KP1=      1  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=      5  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS      2     6
+  LINE NO.=    10  KP1=      2  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=      6  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS      3     7
+  LINE NO.=    11  KP1=      3  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=      7  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS      4     8
+  LINE NO.=    12  KP1=      4  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=      8  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS      9    11
+  LINE NO.=    13  KP1=      9  TAN1=    0.0000  -1.0000   0.0000
+                   KP2=     11  TAN2=    0.0000   1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS      9    10
+  LINE NO.=    14  KP1=      9  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=     10  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS     10    12
+  LINE NO.=    15  KP1=     10  TAN1=    0.0000  -0.7071   0.7071
+                   KP2=     12  TAN2=    0.0000   0.7071  -0.7071
+
+ LINE CONNECTS KEYPOINTS     12    11
+  LINE NO.=    16  KP1=     12  TAN1=    0.0000  -0.7071   0.7071
+                   KP2=     11  TAN2=    0.0000   0.7071  -0.7071
+
+ LINE CONNECTS KEYPOINTS     13    15
+  LINE NO.=    17  KP1=     13  TAN1=    0.0000  -1.0000   0.0000
+                   KP2=     15  TAN2=    0.0000   1.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS     13    14
+  LINE NO.=    18  KP1=     13  TAN1=    0.0000   0.0000  -1.0000
+                   KP2=     14  TAN2=    0.0000   0.0000   1.0000
+
+ LINE CONNECTS KEYPOINTS     14    16
+  LINE NO.=    19  KP1=     14  TAN1=    0.0000  -0.7071   0.7071
+                   KP2=     16  TAN2=    0.0000   0.7071  -0.7071
+
+ LINE CONNECTS KEYPOINTS     16    15
+  LINE NO.=    20  KP1=     16  TAN1=    0.0000  -0.7071   0.7071
+                   KP2=     15  TAN2=    0.0000   0.7071  -0.7071
+
+ LINE CONNECTS KEYPOINTS      9    13
+  LINE NO.=    21  KP1=      9  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=     13  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS     10    14
+  LINE NO.=    22  KP1=     10  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=     14  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS     11    15
+  LINE NO.=    23  KP1=     11  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=     15  TAN2=    1.0000   0.0000   0.0000
+
+ LINE CONNECTS KEYPOINTS     12    16
+  LINE NO.=    24  KP1=     12  TAN1=   -1.0000   0.0000   0.0000
+                   KP2=     16  TAN2=    1.0000   0.0000   0.0000
+
+ VOLUME CONNECTING KEYPOINTS     1     2     3     4     5     6     7     8
+    (GENERATED LINES AND AREAS FITTED IN ACTIVE CSYS =  0)
+
+     VOLUME NUMBER =      1
+
+ VOLUME CONNECTING KEYPOINTS     9    10    11    11    13    14    15    15
+    (GENERATED LINES AND AREAS FITTED IN ACTIVE CSYS =  0)
+
+     VOLUME NUMBER =      2
+
+ *GET  VRP       FROM  VOLU  ITEM=NUM  MIN   VALUE=  1.00000000    
+
+ *GET  VWT1      FROM  VOLU  ITEM=NUM  MAX   VALUE=  2.00000000    
+
+ GLUE VOLUMES
+      INPUT VOLUMES =     1    2
+      INPUT VOLUMES WILL BE DELETED IF POSSIBLE
+      OUTPUT VOLUMES =     3    4
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.547
+
+
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+ *** ERROR ***                           CP =       0.547   TIME= 10:44:50
+ Unknown label NEW/ on the ANTYPE command.  Valid labels are NEW or      
+ RESTART.  The ANTYPE command is ignored.                                
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          0
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          1
+
+
+
+ ***** PROBLEM TERMINATED BY INDICATED ERROR(S) OR BY END OF INPUT DATA *****
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2025 R1            Build: 25.1       Update: UP20241202   Platform: WINDOWS x64 
+Date Run: 10/29/2025   Time: 10:44     Process ID: 24248
+Operating System: Windows 11  (Build: 26100)
+
+Processor Model: AMD Ryzen 7 5800H with Radeon Graphics
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          AOCL-BLAS 4.2.1 Build 20240528
+
+Number of machines requested            :    1
+Total number of cores available         :   16
+Number of physical cores available      :    8
+Number of processes requested           :    4
+Number of threads per process requested :    1
+Total number of cores requested         :    4 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2021.13 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: FEWA0
+Input File: C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\Runfile.txt
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0                   AT-Laptop   C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\Ansout
+     1                   AT-Laptop   C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\Ansout
+     2                   AT-Laptop   C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\Ansout
+     3                   AT-Laptop   C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\Ansout
+ 
+Latency time from master to core     1 =    5.912 microseconds
+Latency time from master to core     2 =    6.030 microseconds
+Latency time from master to core     3 =    5.527 microseconds
+ 
+Communication speed from master to core     1 =  6367.04 MB/sec
+Communication speed from master to core     2 =  5232.01 MB/sec
+Communication speed from master to core     3 =  8319.73 MB/sec
+
+Total CPU time for main thread                    :        0.6 seconds
+Total CPU time summed for all threads             :        1.1 seconds
+
+Elapsed time spent obtaining a license            :        3.8 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
+Elapsed time spent solution - preprocessing       :        0.0 seconds
+Elapsed time spent computing solution             :        0.0 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+
+Sum of disk space used on all processes           :        0.0 MB
+
+Sum of memory used on all processes               :       25.0 MB
+Sum of memory allocated on all processes          :     2880.0 MB
+Physical memory available                         :         14 GB
+Total amount of I/O written to disk               :        0.0 GB
+Total amount of I/O read from disk                :        0.0 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2025 R1         Build 25.1         UP20241202    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
+ |  Max Database Used(Master)      1 MB     Max Scratch Used(Master)      6 MB |
+ |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)     5 MB |
+ |  Sum Database Used(All)         4 MB     Sum Scratch Used(All)        21 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =          1.094       Time  =  10:44:51          |
+ |        Elapsed Time (sec) =          6.000       Date  =  10/29/2025        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*

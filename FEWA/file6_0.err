@@ -1,0 +1,365 @@
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       14:49:45
+
+ *** ERROR ***                           CP =       3.375   TIME= 14:50:08
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =       4.422   TIME= 14:50:09
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =       4.562   TIME= 14:50:10
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 12.         
+
+ *** WARNING ***                         CP =       4.594   TIME= 14:50:10
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 14.         
+
+ *** ERROR ***                           CP =       6.719   TIME= 14:50:48
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =       7.172   TIME= 14:50:49
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =       7.297   TIME= 14:50:49
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 12.         
+
+ *** WARNING ***                         CP =       7.328   TIME= 14:50:49
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 14.         
+
+ *** ERROR ***                           CP =       9.297   TIME= 14:51:33
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =       9.938   TIME= 14:51:34
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =      10.500   TIME= 14:51:39
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 12.         
+
+ *** WARNING ***                         CP =      10.547   TIME= 14:51:39
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 14.         
+
+ *** ERROR ***                           CP =      12.141   TIME= 14:51:55
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =      13.281   TIME= 14:51:58
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =      13.453   TIME= 14:51:59
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 12.         
+
+ *** WARNING ***                         CP =      13.516   TIME= 14:51:59
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 14.         
+
+ *** ERROR ***                           CP =      16.531   TIME= 14:53:00
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =      17.062   TIME= 14:53:01
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =      17.312   TIME= 14:53:01
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =      17.531   TIME= 14:53:02
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 12.         
+
+ *** WARNING ***                         CP =      17.547   TIME= 14:53:02
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 14.         
+
+ *** ERROR ***                           CP =      17.594   TIME= 14:53:02
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =      18.000   TIME= 14:53:03
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =      18.219   TIME= 14:53:03
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =      18.375   TIME= 14:53:04
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 12.         
+
+ *** WARNING ***                         CP =      18.422   TIME= 14:53:04
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 14.         
+
+ *** ERROR ***                           CP =      19.859   TIME= 14:53:19
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =      20.438   TIME= 14:53:20
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =      20.641   TIME= 14:53:20
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 12.         
+
+ *** WARNING ***                         CP =      20.688   TIME= 14:53:20
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 14.         
+
+ *** ERROR ***                           CP =      23.922   TIME= 14:54:24
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =      24.406   TIME= 14:54:25
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =      24.688   TIME= 14:54:25
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 12.         
+
+ *** WARNING ***                         CP =      24.734   TIME= 14:54:26
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 14.         
+
+ *** ERROR ***                           CP =      28.344   TIME= 14:55:54
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** ERROR ***                           CP =      28.734   TIME= 14:55:55
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =      29.172   TIME= 14:55:56
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 12.         
+
+ *** WARNING ***                         CP =      29.234   TIME= 14:55:56
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 7.  The number of data values is 14.         
+
+ *** WARNING ***                         CP =      38.172   TIME= 15:00:57
+ The material property temperature table is not defined.  The MPDATA     
+ command is ignored.                                                     
+
+ *** WARNING ***                         CP =      38.234   TIME= 15:00:57
+ The material property temperature table is not defined.  The MPDATA     
+ command is ignored.                                                     
+
+ *** WARNING ***                         CP =      38.281   TIME= 15:00:57
+ The material property temperature table is not defined.  The MPDATA     
+ command is ignored.                                                     
+
+ *** WARNING ***                         CP =      50.219   TIME= 15:11:03
+ The material property label SY is unknown.  The MPDATA command is       
+ ignored.                                                                
+
+ *** WARNING ***                         CP =      50.266   TIME= 15:11:03
+ The material property label SY is unknown.  The MPDATA command is       
+ ignored.                                                                
+
+ *** WARNING ***                         CP =      50.312   TIME= 15:11:03
+ The material property label SY is unknown.  The MPDATA command is       
+ ignored.                                                                
+
+ *** WARNING ***                         CP =      50.406   TIME= 15:11:03
+ The material property label ETAN is unknown.  The MPDATA command is     
+ ignored.                                                                
+
+ *** WARNING ***                         CP =      50.469   TIME= 15:11:03
+ The material property label ETAN is unknown.  The MPDATA command is     
+ ignored.                                                                
+
+ *** WARNING ***                         CP =      50.516   TIME= 15:11:04
+ The material property label ETAN is unknown.  The MPDATA command is     
+ ignored.                                                                
+
+ *** ERROR ***                           CP =      67.812   TIME= 15:20:37
+ The temperature specification 100 is greater than the maximum value of  
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      68.469   TIME= 15:20:40
+ The temperature specification 600 is greater than the maximum value of  
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      68.719   TIME= 15:20:41
+ The temperature specification 1200 is greater than the maximum value of 
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** WARNING ***                         CP =      69.031   TIME= 15:20:41
+ For material number 1, the BISO table starting location of 3 exceeds    
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.078   TIME= 15:20:41
+ For material number 1, the BISO table starting location of 5 exceeds    
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.109   TIME= 15:20:42
+ For material number 1, the BISO table starting location of 7 exceeds    
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.172   TIME= 15:20:42
+ For material number 1, the BISO table starting location of 9 exceeds    
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.219   TIME= 15:20:42
+ For material number 1, the BISO table starting location of 11 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.281   TIME= 15:20:42
+ For material number 1, the BISO table starting location of 13 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.312   TIME= 15:20:42
+ For material number 1, the BISO table starting location of 15 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.359   TIME= 15:20:42
+ For material number 1, the BISO table starting location of 17 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.422   TIME= 15:20:42
+ For material number 1, the BISO table starting location of 19 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.484   TIME= 15:20:42
+ For material number 1, the BISO table starting location of 21 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.516   TIME= 15:20:43
+ For material number 1, the BISO table starting location of 23 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.562   TIME= 15:20:43
+ For material number 1, the BISO table starting location of 25 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =      69.609   TIME= 15:20:43
+ For material number 1, the BISO table starting location of 27 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** ERROR ***                           CP =      72.703   TIME= 15:21:03
+ The temperature specification 100 is greater than the maximum value of  
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      77.922   TIME= 15:21:38
+ The temperature specification 600 is greater than the maximum value of  
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      78.250   TIME= 15:21:38
+ The temperature specification 1200 is greater than the maximum value of 
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      83.531   TIME= 15:26:45
+ The temperature specification 20 is greater than the maximum value of 6 
+ for material number 1.  The TBTEMP command is ignored.                  
+
+ *** ERROR ***                           CP =      84.750   TIME= 15:27:23
+ The temperature specification 600 is greater than the maximum value of  
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      85.125   TIME= 15:27:24
+ The temperature specification 1200 is greater than the maximum value of 
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      89.484   TIME= 15:28:09
+ The temperature specification 20 is greater than the maximum value of 6 
+ for material number 1.  The TBTEMP command is ignored.                  
+
+ *** ERROR ***                           CP =      89.969   TIME= 15:28:11
+ The temperature specification 600 is greater than the maximum value of  
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      90.328   TIME= 15:28:11
+ The temperature specification 1200 is greater than the maximum value of 
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      93.953   TIME= 15:28:22
+ The temperature specification 20 is greater than the maximum value of 6 
+ for material number 1.  The TBTEMP command is ignored.                  
+
+ *** ERROR ***                           CP =      95.516   TIME= 15:28:27
+ The temperature specification 600 is greater than the maximum value of  
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =      96.031   TIME= 15:28:30
+ The temperature specification 1200 is greater than the maximum value of 
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =     103.094   TIME= 15:33:09
+ The temperature specification 20 is greater than the maximum value of 6 
+ for material number 1.  The TBTEMP command is ignored.                  
+
+ *** ERROR ***                           CP =     110.750   TIME= 08:23:54
+ The temperature specification 600 is greater than the maximum value of  
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** ERROR ***                           CP =     111.031   TIME= 08:23:54
+ The temperature specification 1200 is greater than the maximum value of 
+ 6 for material number 1.  The TBTEMP command is ignored.                
+
+ *** WARNING ***                         CP =     111.484   TIME= 08:23:55
+ For material number 1, the BISO table starting location of 3 exceeds    
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     111.547   TIME= 08:23:55
+ For material number 1, the BISO table starting location of 5 exceeds    
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     111.641   TIME= 08:23:55
+ For material number 1, the BISO table starting location of 7 exceeds    
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     111.688   TIME= 08:23:55
+ For material number 1, the BISO table starting location of 9 exceeds    
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     111.750   TIME= 08:23:55
+ For material number 1, the BISO table starting location of 11 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     111.812   TIME= 08:23:55
+ For material number 1, the BISO table starting location of 13 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     111.875   TIME= 08:23:56
+ For material number 1, the BISO table starting location of 15 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     111.953   TIME= 08:23:56
+ For material number 1, the BISO table starting location of 17 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     112.000   TIME= 08:23:56
+ For material number 1, the BISO table starting location of 19 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     112.047   TIME= 08:23:56
+ For material number 1, the BISO table starting location of 21 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     112.078   TIME= 08:23:56
+ For material number 1, the BISO table starting location of 23 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     112.172   TIME= 08:23:56
+ For material number 1, the BISO table starting location of 25 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 
+
+ *** WARNING ***                         CP =     112.234   TIME= 08:23:56
+ For material number 1, the BISO table starting location of 27 exceeds   
+ the maximum value of 2.  The TBDATA command is ignored.                 

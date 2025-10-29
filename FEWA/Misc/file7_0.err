@@ -1,0 +1,236 @@
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       08:50:30
+
+ *** WARNING ***                         CP =      15.422   TIME= 08:53:43
+ TPDATA is not a recognized PREP7 command, abbreviation, or macro.       
+  This command will be ignored.                                          
+
+ *** WARNING ***                         CP =      15.719   TIME= 08:53:43
+ TPDATA is not a recognized PREP7 command, abbreviation, or macro.       
+  This command will be ignored.                                          
+
+ *** WARNING ***                         CP =      15.766   TIME= 08:53:43
+ TPDATA is not a recognized PREP7 command, abbreviation, or macro.       
+  This command will be ignored.                                          
+
+ *** ERROR ***                           CP =      23.953   TIME= 08:59:02
+ Temperatures for material properties must be in ascending order.  The   
+ MPTEMP command is ignored.                                              
+
+ *** WARNING ***                         CP =      24.141   TIME= 08:59:05
+ Material property table exceeds the number of defined temperatures.     
+  Number of temperatures is 14.  The number of data values is 16.        
+
+ *** ERROR ***                           CP =      24.203   TIME= 08:59:05
+ TB,PLAS,,,BISO has already been defined.  Please delete existing table  
+ to overwrite.                                                           
+
+ *** WARNING ***                         CP =      43.234   TIME= 09:06:07
+ Use of degree of freedom labels as parameter names is not allowed.  The 
+ setting of parameter= TEMP is ignored.                                  
+
+ *** ERROR ***                           CP =      43.734   TIME= 09:06:07
+ TAN is an MAPDL or system intrinsic function and can not be used as a   
+ valid array.                                                            
+
+ *** ERROR ***                           CP =      44.250   TIME= 09:06:09
+ Invalid character in parameter name.                                    
+  The setting of parameter= TEMP(1) is ignored.                          
+
+ *** ERROR ***                           CP =      44.531   TIME= 09:06:09
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***                           CP =      44.734   TIME= 09:06:10
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***                           CP =      44.969   TIME= 09:06:11
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***                           CP =      45.281   TIME= 09:06:11
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      45.484   TIME= 09:06:12
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***                           CP =      45.531   TIME= 09:06:12
+ Invalid character in parameter name.                                    
+  The setting of parameter= TAN(1) is ignored.                           
+
+ *** ERROR ***                           CP =      45.781   TIME= 09:06:12
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***                           CP =      45.984   TIME= 09:06:13
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***                           CP =      46.234   TIME= 09:06:13
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***                           CP =      46.453   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      46.734   TIME= 09:06:14
+ No dimensions set for parameter= TAN(1).                                
+
+ *** WARNING ***                         CP =      48.234   TIME= 09:06:29
+ Use of degree of freedom labels as parameter names is not allowed.  The 
+ setting of parameter= TEMP is ignored.                                  
+
+ *** ERROR ***                           CP =      48.766   TIME= 09:06:29
+ TAN is an MAPDL or system intrinsic function and can not be used as a   
+ valid array.                                                            
+
+ *** ERROR ***                           CP =      49.297   TIME= 09:06:30
+ Invalid character in parameter name.                                    
+  The setting of parameter= TEMP(1) is ignored.                          
+
+ *** ERROR ***                           CP =      49.594   TIME= 09:06:30
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***                           CP =      49.766   TIME= 09:06:31
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***                           CP =      50.047   TIME= 09:06:31
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***                           CP =      50.281   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      50.469   TIME= 09:06:32
+ No dimensions set for parameter= TEMP(1).                               
+
+ *** ERROR ***                           CP =      50.516   TIME= 09:06:32
+ Invalid character in parameter name.                                    
+  The setting of parameter= TAN(1) is ignored.                           
+
+ *** ERROR ***                           CP =      50.625   TIME= 09:06:33
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***                           CP =      50.734   TIME= 09:06:33
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***                           CP =      50.781   TIME= 09:06:33
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***                           CP =      50.875   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** ERROR ***     SUPPRESSED MESSAGE    CP =      51.125   TIME= 09:06:34
+ No dimensions set for parameter= TAN(1).                                
+
+ *** FATAL ***                           CP =      51.281   TIME= 09:06:34
+ Database access error.  Please send the data leading to this operation  
+ to your technical support provider, as this will allow ANSYS, Inc to    
+ improve the program.                                                    
+
+ ************************************************************************
+ The above error is non-recoverable by ANSYS                             
+ ANSYS run terminated by the indicated error                             
+ Current data base saved if possible.                                    
+ ************************************************************************
