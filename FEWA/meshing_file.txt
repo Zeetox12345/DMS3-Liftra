@@ -36,6 +36,5 @@ LPLOT
 !Setting Mesh Parameters 
  MSHKEY, 1 
 VSWEEP, ALL ! Creating Mesh 
-SHPP,SUMMARY
 !----- MESH FINISH ----- 
  

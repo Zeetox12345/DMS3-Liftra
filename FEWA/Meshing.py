@@ -63,7 +63,7 @@ def meshing_create(p):
         file.write("!Setting Mesh Parameters \n ")
         file.write("MSHKEY, 1 \n")
         file.write("VSWEEP, ALL ! Creating Mesh \n")
-        file.write("SHPP,SUMMARY\n")
+        #file.write("!SHPP,SUMMARY\n")
         file.write("!----- MESH FINISH ----- \n \n")
 
 if __name__ == "__main__":

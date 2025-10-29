@@ -3,4 +3,6 @@ Weldlength = 100
 Weldwidth = 50
 Weldthick = 4
 Weldthroat = 4
+Weld_vel = 4.5 
+Break_1 = 10
 

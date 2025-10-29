@@ -39,7 +39,11 @@ def main():
         variables["Weldthick"],
         variables["Weldthroat"],
     )
+    # Add Weld_v to params manually
+    for key in ["Weld_vel","Break_1"]:
+        params[key] = variables[key]
     
+        
     # Run ncreate in GeoCrate txt file to be passed.
     GeoCreate.write_ncreate(params)
     

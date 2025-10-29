@@ -1,9 +1,109 @@
 !----- TRANSIENT THERMAL ANALYSIS ----- 
  
-X1 value: 0 
-Y1 value: {0.9142135623730949} 
-Z1 value: {5.414213562373095} 
+!X1 value: 0 
+!Y1 value: {0.9142135623730949} 
+!Z1 value: {5.414213562373095} 
  
 /SOLU 
 ANTYPE,TRANSIENT,NEW 
-ALLSEL,ALLTUNIF,75
+KBC,1 
+ALLSEL,ALL 
+TUNIF,75 
+ 
+! Apply Convection 
+ALLSEL,ALL 
+SF,ALL,CONV,7.5e-6,22 
+
+!--- Time step options --- 
+AUTOTS,OFF 
+DELTIM,0.5 
+TIME,32.22 
+timint,on 
+!------------------------- 
+ 
+X1 = 0 
+Y1 = 0.9142135623730949 
+Z1 = 5.414213562373095 
+DIR_Pass1 = 1 ! + x 
+CMSEL,ALL 
+*GET,EMAX,ELEM,,NUM,MAX 
+*GET,EMIN,ELEM,,NUM,MIN 
+ ALLSEL,ALL
+NROPT,FULL 
+!---Source Parameters --- 
+A = 3.0 
+B = 4.0 
+C1 = 4.0 
+C2 = 16.0 
+TAU = 0 
+FF = 0.6 
+FR = 1.4 
+PI = acos(-1) 
+VEL_1 = 4.5 
+ 
+Q = 2840000 
+! TIMING (per pass + break) 
+time_inc = 0.5 ! sec 
+time_weld_pass_1 = 22.22 
+break_weld_pass_1 = 10.0 ! s 
+n1 = time_weld_pass_1 / time_inc 
+nb1 = break_weld_pass_1 / time_inc 
+TBASE1 = 0 
+END1 = 22.22222222222222 
+
+!--- PASS_1 --- 
+*DO,i1,1,n1,1 
+WTIME = TBASE1 + (i1*time_inc) 
+BFEDELE,ALL,HGEN 
+  TIME,WTIME 
+ 
+  Xc = X1 + DIR_pass1*4.5*(WTIME-0-TAU)  
+  Yc = Y1 
+  Zc = Z1 
+  *GET,ECNT,ELEM,,COUNT 
+  *IF,ECNT,GT,0,THEN 
+    *GET,EMINS1,ELEM,,NUM,MIN 
+    *GET,EMAXS1,ELEM,,NUM,MAX 
+ 
+    *DO,jj1,EMINS1,EMAXS1,1 
+      X = CENTRX(jj1) 
+      Y = CENTRY(jj1) 
+      Z = CENTRZ(jj1) 
+ 
+      XREL = X - Xc 
+      YREL = Y - Yc 
+      ZREL = Z - Zc 
+ 
+      *IF,YREL,GT,0,THEN 
+        C = C1 
+        F = FF 
+      *ELSE 
+        C = C2 
+        F = FR 
+      *ENDIF 
+      PART1 = (6*(3**0.5)*Q*F)/(A*B*C*PI*(PI**0.5)) 
+      PART2 = (exp(-3*(XREL/A)**2))*(exp(-3*(YREL/B)**2))*(exp(-3*(ZREL/C)**2)) 
+      QF = PART1*PART2 
+ 
+      BFE,jj1,HGEN,,QF 
+    *ENDDO 
+  *ENDIF 
+  ALLSEL,ALL 
+  SOLVE 
+  BFDELE,ALL,HGDEN 
+ *ENDDO 
+BFEDELE,ALL,HGEN 
+ 
+!--- BREAK AFTER PASS 1 --- 
+*IF,nb1,GT,0,THEN 
+  *DO,ib1,1,nb1,1 
+    WTIME = END1 + ib1*time_inc 
+    TIME,WTIME 
+    ALLSEL,ALL 
+    SOLVE 
+  *ENDDO 
+*ENDIF 
+SOLVE 
+
+!----- FINISH TRANSIENT THERMAL ANALYSIS ----- 
+ 

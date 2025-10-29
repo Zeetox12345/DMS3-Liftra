@@ -57,6 +57,3 @@ v,9,10,11,13,14,15
  VGLUE,ALL ! Glue Volumes Together 
 ! ----- FINISH GEOMETRY CREATION ----- 
  
-! ----- Apply Loads and Solve ----- 
-/SOLU 
-ANTYPE,TRANSIENT,NEW

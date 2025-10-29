@@ -100,9 +100,6 @@ def write_ncreate(p):
 
         file.write("! ----- FINISH GEOMETRY CREATION ----- \n \n")
         
-        file.write("! ----- Apply Loads and Solve ----- \n")
-        file.write("/SOLU \n")
-        file.write("ANTYPE,TRANSIENT,NEW")
 
 
 
