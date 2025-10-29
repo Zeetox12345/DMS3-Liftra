@@ -7,6 +7,7 @@ import os
 import subprocess
 import GeoCreate
 import Meshing
+import Transtherm
 
 ##### NOTES / TO BE INVESTIGATED
 # MAKE SURE UNITS ARE CORRECT INCLUDING TEMPERATURE
@@ -36,7 +37,7 @@ def main():
         variables["Weldlength"],
         variables["Weldwidth"],
         variables["Weldthick"],
-        variables["Weldthroat"]
+        variables["Weldthroat"],
     )
     
     # Run ncreate in GeoCrate txt file to be passed.
@@ -71,13 +72,13 @@ def main():
             for line in mesh_file:
                 file.write(line)
 
+        # Running Transient Thermal Script
+        Transtherm.trans_create(params)
 
-        # Transient Thermal
-        file.write("!------ TRANSIENT THERMAL SETTINGS ------ \n")
-        file.write("/SOLU \n") # Intialize Solution Menu
-        file.write("ANTYPE,TRANSIENT,NEW \n") # New Transient Thermal
-        file.write("ALLSEL,ALL") # Make sure everything (elemtns, nodes etc.) is selected
-        file.write("TUNIF,75") # Setting Initial Temperature for all nodes
+        # Read output txt file from transtherm.py
+        with open("trans_file.txt","r") as trans_file:
+            for line in trans_file:
+                file.write(line)
 
 
 
@@ -95,6 +96,7 @@ def main():
     output_file = os.path.join(output_dir,"FEWA_output.txt")
 
     # Run the whole thaang
+    """
     subprocess.run([
         ansys_path,
         "-b",
@@ -103,7 +105,8 @@ def main():
         "-dir", output_dir,
         "-j","FEWA",
         "-np", "4"
-
+    
     ])
+    """
 if __name__ == "__main__":
     main()

@@ -1,6 +1,8 @@
+!-------------------------------------- 
 !---------- APDL EXCECUTABLE ---------- 
+!-------------------------------------- 
  
-!INITIALIZING 
+ !INITIALIZING 
  /PREP7
 /UNITS,MPa
  
@@ -173,5 +175,13 @@ VSWEEP, ALL ! Creating Mesh
 SHPP,SUMMARY
 !----- MESH FINISH ----- 
  
-!SAVING FILE 
+!----- TRANSIENT THERMAL ANALYSIS ----- 
+ 
+X1 value: 0 
+Y1 value: {0.9142135623730949} 
+Z1 value: {5.414213562373095} 
+ 
+/SOLU 
+ANTYPE,TRANSIENT,NEW 
+ALLSEL,ALLTUNIF,75!SAVING FILE 
 SAVE, SaveFile2.db
