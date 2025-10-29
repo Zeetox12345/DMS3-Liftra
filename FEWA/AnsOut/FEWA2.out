@@ -99,7 +99,7 @@
   INITIAL DIRECTORY = C:\Users\atbys\OneDrive - Aalborg Universitet\9. semester\VisualCodeLiftra\DMS3-Liftra\FEWA\Ansout
 
  RELEASE= 2025 R1              BUILD= 25.1      UP20241202   VERSION=WINDOWS x64 
- CURRENT JOBNAME=FEWA2  10:44:50  OCT 29, 2025 CP=      0.078
+ CURRENT JOBNAME=FEWA2  11:00:02  OCT 29, 2025 CP=      0.078
 
 
  *****  MAPDL SOLUTION ROUTINE  *****
@@ -107,7 +107,7 @@
  FINISH SOLUTION PROCESSING
 
 
- ***** ROUTINE COMPLETED *****  CP =         0.281
+ ***** ROUTINE COMPLETED *****  CP =         0.250
 
 
 
@@ -133,7 +133,7 @@
  |                                                                             |
  |-----------------------------------------------------------------------------|
  |                                                                             |
- |        CP Time      (sec) =          0.281       Time  =  10:44:50          |
+ |        CP Time      (sec) =          0.266       Time  =  11:00:02          |
  |        Elapsed Time (sec) =          5.000       Date  =  10/29/2025        |
  |                                                                             |
  *-----------------------------------------------------------------------------*

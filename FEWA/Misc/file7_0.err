@@ -234,3 +234,21 @@
  ANSYS run terminated by the indicated error                             
  Current data base saved if possible.                                    
  ************************************************************************
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       09:06:46
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       11:00:24
+
+ *** WARNING ***                         CP =      22.500   TIME= 11:24:25
+ The minimum time step (DTMIN = 5) is greater than the starting time     
+ step (DTIME = 1).  The DTMIN is set to 1.                               
+
+ *** WARNING ***                         CP =      23.312   TIME= 11:24:38
+ The minimum time step (DTMIN = 5) is greater than the starting time     
+ step (DTIME = 1).  The DTMIN is set to 1.                               
+
+ *** WARNING ***                         CP =      25.141   TIME= 11:25:00
+ This will be a single-frame restart analysis.  The .rdb and .ldhi files 
+ are not available.                                                      
+
+ *** WARNING ***                         CP =      28.016   TIME= 11:25:27
+ The minimum time step (DTMIN = 5) is greater than the starting time     
+ step (DTIME = 1).  The DTMIN is set to 1.                               

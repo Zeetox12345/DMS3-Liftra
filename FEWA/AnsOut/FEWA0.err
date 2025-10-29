@@ -11,3 +11,8 @@
  *** ERROR ***                           CP =       0.547   TIME= 10:44:50
  Unknown label NEW/ on the ANTYPE command.  Valid labels are NEW or      
  RESTART.  The ANTYPE command is ignored.                                
+/COM,ANSYS RELEASE 2025 R1           BUILD 25.1      UP20241202       10:59:59
+
+ *** ERROR ***                           CP =       0.484   TIME= 11:00:02
+ Unknown label NEW/ on the ANTYPE command.  Valid labels are NEW or      
+ RESTART.  The ANTYPE command is ignored.                                

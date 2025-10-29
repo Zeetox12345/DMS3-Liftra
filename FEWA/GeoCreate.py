@@ -8,10 +8,10 @@ def comp_params(Weldlength, Weldwidth, Weldthick, Weldthroat):
     Wkat = Weldthroat / 2 / math.cos(math.radians(45))
 
     # Weld Global Start Location
-    X0 = 0
-    Y0 = {-0.5+  Wkat/2}
-    Z0 = {Weldthick+Wkat/2}
-    return dict(Wkat=Wkat, X0=X0, Y0=Y0, Z0=Z0,
+    X1 = 0
+    Y1 = {-0.5+  Wkat/2}
+    Z1 = {Weldthick+Wkat/2}
+    return dict(Wkat=Wkat, X1=X1, Y1=Y1, Z1=Z1,
                 Weldlength=Weldlength,
                 Weldwidth=Weldwidth,
                 Weldthick=Weldthick,
@@ -92,6 +92,7 @@ def write_ncreate(p):
         file.write("! Volume Create \n ")
         file.write("v,1,2,3,4,5,6,7,8 \n") # Reinforcement Plate #1
         file.write("v,9,10,11,13,14,15 \n") # Weld Toe 1 #2
+
         file.write("*GET,vRP,VOLU,0,NUM,MIN \n")
         file.write("*GET,vWT1,VOLU,0,NUM,MAX \n ")
 

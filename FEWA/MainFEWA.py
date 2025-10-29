@@ -8,6 +8,11 @@ import subprocess
 import GeoCreate
 import Meshing
 
+##### NOTES / TO BE INVESTIGATED
+# MAKE SURE UNITS ARE CORRECT INCLUDING TEMPERATURE
+
+
+
 def main():
 
     # Read user input
@@ -42,7 +47,9 @@ def main():
 
     ###### CREATE RUNFILE #####
     with open("Runfile.txt", "w") as file:
-        file.write("!---------- APDL EXCECUTABLE ---------- \n \n")
+        file.write("!-------------------------------------- \n")
+        file.write("!---------- APDL EXCECUTABLE ---------- \n")
+        file.write("!-------------------------------------- \n \n ")
         file.write("!INITIALIZING \n ")
         file.write("/PREP7\n") 
         file.write("/UNITS,MPa\n \n") # [mm,Mg,s,C] - 1e6 Mg to 1 kg  
@@ -63,6 +70,16 @@ def main():
         with open("meshing_file.txt","r") as mesh_file:
             for line in mesh_file:
                 file.write(line)
+
+
+        # Transient Thermal
+        file.write("!------ TRANSIENT THERMAL SETTINGS ------ \n")
+        file.write("/SOLU \n") # Intialize Solution Menu
+        file.write("ANTYPE,TRANSIENT,NEW \n") # New Transient Thermal
+        file.write("ALLSEL,ALL") # Make sure everything (elemtns, nodes etc.) is selected
+        file.write("TUNIF,75") # Setting Initial Temperature for all nodes
+
+
 
         # SaveFile
         file.write("!SAVING FILE \n")
