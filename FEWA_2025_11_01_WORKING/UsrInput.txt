@@ -1,7 +1,0 @@
-# User Input [in m]
-Weldlength = 100
-Weldwidth = 50
-Weldthick = 4
-Weldthroat = 4
-Break_1 = 10
-Weld_vel = 4.5
