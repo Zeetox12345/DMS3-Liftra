@@ -1,0 +1,259 @@
+<<<<<<< HEAD
+ *** ERROR ***
+ Another ANSYS job with the same job name (file) is already running in this
+ directory or the file.lock file has not been deleted from an abnormally
+ terminated ANSYS run.  To disable this check, set the ANSYS_LOCK environment
+ variable to OFF.
+=======
+
+ Ansys Mechanical Enterprise Academic Research     
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *         ANSYS MAPDL 2025 R1          LEGAL NOTICES          *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2025 Ansys, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of Ansys, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the Ansys, Inc. online documentation or the Ansys, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * Ansys, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * Ansys, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the Ansys, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the Ansys, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2025 R1 
+     
+ Point Releases and Patches installed:   
+     
+ Ansys, Inc. License Manager 2025 R1 
+ Discovery (reduced install) 2025 R1 
+ Core WB Files 2025 R1   
+ Remote Solve Manager Standalone Services 2025 R1
+ Additive 2025 R1
+ Autodyn 2025 R1 
+ Customization Files for User Programmable Features 2025 R1  
+ LS-DYNA 2025 R1 
+ Material Designer 2025 R1   
+ Mechanical Products 2025 R1 
+ ACIS Geometry Interface 2025 R1 
+ AutoCAD Geometry Interface 2025 R1  
+ Catia, Version 4 Geometry Interface 2025 R1 
+ Catia, Version 5 Geometry Interface 2025 R1 
+ Catia, Version 6 Geometry Interface 2025 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2025 R1
+ Creo Parametric Geometry Interface 2025 R1  
+ Inventor Geometry Interface 2025 R1 
+ JTOpen Geometry Interface 2025 R1   
+ NX Geometry Interface 2025 R1   
+ Parasolid Geometry Interface  2025 R1   
+ Solid Edge Geometry Interface 2025 R1   
+ SOLIDWORKS Geometry Interface 2025 R1   
+
+
+          *****  MAPDL COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = LIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  INPUT FILE NAME              = C:\repos\DMS3-Liftra\FEWA\Runfile.txt
+  OUTPUT FILE NAME             = C:\repos\DMS3-Liftra\FEWA\output.txt
+
+ RELEASE= 2025 R1              BUILD= 25.1      UP20241202   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  14:17:02  OCT 15, 2025 CP=      0.219
+
+     1  /PREP7  
+     2  /UNITS,MPa  
+     3  NODE CREATION   
+     4  N,1,0,0,0   
+     5  N,2,WeldLength,WeldWith,0   
+     6  N,3,3,3,3   
+     7  FINISH NODE CREATION
+     8  SAVE, SSSaveFile.db 
+
+ RUN SETUP PROCEDURE FROM FILE= C:\Program Files\ANSYS Inc\v251\ANSYS\apdl\start.ans
+
+ /INPUT FILE= C:\Program Files\ANSYS Inc\v251\ANSYS\apdl\start.ans  LINE=       0
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2025 R1          25.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00254321  VERSION=WINDOWS x64   14:17:03  OCT 15, 2025 CP=      0.531
+
+                                                                               
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+
+ MPA UNITS SPECIFIED FOR INTERNAL    
+  LENGTH      = MILLIMETERS (mm)
+  MASS        = TONNE (Mg)
+  TIME        = SECONDS (sec)
+  TEMPERATURE = CELSIUS (C)
+  TOFFSET     = 273.0
+  FORCE       = NEWTON (N)
+  HEAT        = MILLIJOULES (mJ)
+
+ INPUT  UNITS ARE ALSO SET TO MPA 
+
+ NODE          1  KCS=      0  X,Y,Z=  0.0000       0.0000       0.0000     
+
+ *** WARNING ***                         CP =       0.547   TIME= 14:17:03
+ Undefined parameter used for coordinate 1.                              
+  A value of 0.0 will be used.                                           
+
+ *** WARNING ***                         CP =       0.547   TIME= 14:17:03
+ Undefined parameter used for coordinate 2.                              
+  A value of 0.0 will be used.                                           
+
+ NODE          2  KCS=      0  X,Y,Z=  0.0000       0.0000       0.0000     
+
+ NODE          3  KCS=      0  X,Y,Z=  3.0000       3.0000       3.0000     
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.547
+
+
+
+ ALL CURRENT MAPDL DATA WRITTEN TO FILE NAME= SSSaveFile.db
+  FOR POSSIBLE RESUME FROM THIS POINT
+
+ ***** END OF INPUT ENCOUNTERED *****
+
+ PURGE ALL SOLUTION AND POST DATA
+ SAVE ALL MODEL DATA
+
+ ALL CURRENT MAPDL DATA WRITTEN TO FILE NAME= file.db
+  FOR POSSIBLE RESUME FROM THIS POINT
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          2
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2025 R1            Build: 25.1       Update: UP20241202   Platform: WINDOWS x64 
+Date Run: 10/15/2025   Time: 14:17     Process ID: 15044
+Operating System: Windows 11  (Build: 26100)
+
+Processor Model: 13th Gen Intel(R) Core(TM) i7-1355U
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) oneAPI Math Kernel Library Version 2023.1-Product Build 20230303
+
+Number of machines requested            :    1
+Total number of cores available         :   12
+Number of physical cores available      :   10
+Number of processes requested           :    4
+Number of threads per process requested :    1
+Total number of cores requested         :    4 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2021.13 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: Runfile.txt
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0                  Christian0   C:\repos\DMS3-Liftra\FEWA
+     1                  Christian0   C:\repos\DMS3-Liftra\FEWA
+     2                  Christian0   C:\repos\DMS3-Liftra\FEWA
+     3                  Christian0   C:\repos\DMS3-Liftra\FEWA
+ 
+Latency time from master to core     1 =   18.122 microseconds
+Latency time from master to core     2 =    5.124 microseconds
+Latency time from master to core     3 =    4.265 microseconds
+ 
+Communication speed from master to core     1 =   714.37 MB/sec
+Communication speed from master to core     2 =  1153.74 MB/sec
+Communication speed from master to core     3 =  1411.81 MB/sec
+
+Total CPU time for main thread                    :        0.9 seconds
+Total CPU time summed for all threads             :        0.6 seconds
+
+Elapsed time spent obtaining a license            :        2.7 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
+Elapsed time spent solution - preprocessing       :        0.0 seconds
+Elapsed time spent computing solution             :        0.0 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+
+Sum of disk space used on all processes           :        0.0 MB
+
+Sum of memory used on all processes               :       27.0 MB
+Sum of memory allocated on all processes          :     2880.0 MB
+Physical memory available                         :         16 GB
+Total amount of I/O written to disk               :        0.0 GB
+Total amount of I/O read from disk                :        0.0 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2025 R1         Build 25.1         UP20241202    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
+ |  Max Database Used(Master)      1 MB     Max Scratch Used(Master)      8 MB |
+ |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)     5 MB |
+ |  Sum Database Used(All)         4 MB     Sum Scratch Used(All)        23 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =          0.594       Time  =  14:17:05          |
+ |        Elapsed Time (sec) =          6.000       Date  =  10/15/2025        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*
+>>>>>>> origin/main
